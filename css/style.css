@@ -1,0 +1,15 @@
+.overall-area {
+  width: 100%;
+}
+
+.p1-score, .game-options, .p2-score {
+  text-align: center;
+}
+
+header .btn {
+  background-color: rgb(238, 238, 238);
+}
+
+.game-board {
+  padding: 0px auto;
+}
