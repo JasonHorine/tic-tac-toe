@@ -5,10 +5,13 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/script.js"></script>
 
   </head>
 
@@ -17,45 +20,67 @@
     <title>
       Tic Tac Toe!
     </title>
+      <div class="overall-area">
+        <header>
 
-    <div class="container overall-area">
-      <header>
-        <div class="row header">
-          <div class="p1-score col-xs-5">
-            player 1 score
-          </div>
-          <div class="col-xs-2" >
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-            </button>
-          </div>
-          <div class="p2-score col-xs-5">
-            player 2 score
+            <div class="p1-score">
+              <p>Player 1</p>
+              <p id="p1Score" >X</p>
+            </div>
+            <div class="btn-div" >
+              <button id="resetBtn" type="button" class="btn btn-default" aria-label="Right Align">
+                <!-- <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> -->
+                <!-- <i class="fa fa-bars"></i> -->
+                <!-- &#9776 -->
+                Reset
+              </button>
+              <!-- <p>Play to: 3</p> -->
+            </div>
+            <div class="p2-score">
+              <p>Player 2</p>
+              <p id="p2Score" >O</p>
+            </div>
+
+        </header>
+        <div>
+          <div class="game-board">
+            <div>
+              <div id="cell0" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell1" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell2" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell3" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell4" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell5" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell6" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell7" class="game-cell">
+                <p></p>
+              </div>
+              <div id="cell8" class="game-cell">
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
-      <div class="row game-board">
-         <div class="col-xs-10">
-          <table class="table-bordered table-responsive">
-            <tr>
-              <td id="00">X</td>
-              <td id="01">O</td>
-              <td id="02">X</td>
-            </tr>
-            <tr>
-              <td id="10">X</td>
-              <td id="11">X</td>
-              <td id="12">X</td>
-            </tr>
-            <tr>
-              <td id="20">0</td>
-              <td id="21">X</td>
-              <td id="22">X</td>
-            </tr>
-          </table>
-        </div>
+        <footer>
+          <div id="player1Pointer" class="turnPointer"></div>
+          <div class="turnPointer">Your Turn!</div>
+          <div id="player2Pointer" class="turnPointer"></div>
+        </footer>
       </div>
-    </div>
   </body>
 
 </html>
