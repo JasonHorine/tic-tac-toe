@@ -42,7 +42,10 @@ header {
   font-size: 80px;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
-  line-height: 100%;
+  line-height: 123px; /*edited this line after the course*/
+  /*  added the following two lines after the course*/
+  position: relative;
+  top: -18px;
 }
 
 footer {
