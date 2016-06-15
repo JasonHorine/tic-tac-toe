@@ -37,15 +37,44 @@ header {
   margin: 0px;
 }
 
-.game-cell p {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 80px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  line-height: 123px; /*edited this line after the course*/
-  /*  added the following two lines after the course*/
-  position: relative;
-  top: -18px;
+.red { /* must start with saturated red image for color to be correct */
+    -webkit-filter: hue-rotate(0deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(0deg);
+    -webkit-filter: saturate(100);
+    filter: saturate(100);
+}
+
+.green { /* must start with saturated red image for color to be correct */
+    -webkit-filter: hue-rotate(115deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(115deg);
+    -webkit-filter: saturate(100);
+    filter: saturate(100);
+}
+
+.blue { /* must start with saturated red image for color to be correct */
+    -webkit-filter: hue-rotate(240deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(240deg);
+    -webkit-filter: saturate(100);
+    filter: saturate(100);
+}
+
+.purple { /* must start with saturated red image for color to be correct */
+    -webkit-filter: hue-rotate(270deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(270deg);
+    -webkit-filter: saturate(100);
+    filter: saturate(100);
+}
+
+.black { /* must start with saturated red image for color to be correct */
+    -webkit-filter: hue-rotate(270deg); /* Chrome, Safari, Opera */
+    filter: hue-rotate(270deg);
+    -webkit-filter: saturate(0);
+    filter: saturate(0);
+}
+
+.game-cell img {
+  height: 80px;
+  margin: 7px 9px;
 }
 
 footer {
