@@ -2,7 +2,6 @@
   height: 480px;
   width: 290px;
   margin: 20px auto;
-
 }
 
 header {
@@ -10,6 +9,17 @@ header {
   padding-top: 5px;
   display: flex;
   justify-content: space-between;
+}
+
+p, h3{
+  padding: 0px 10px;
+}
+
+footer {
+  width: 290px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .p1-score, .game-options, .p2-score, .btn-div, .game-cell{
@@ -38,50 +48,34 @@ header {
 }
 
 .red { /* must start with saturated red image for color to be correct */
-    -webkit-filter: hue-rotate(0deg); /* Chrome, Safari, Opera */
-    filter: hue-rotate(0deg);
-    -webkit-filter: saturate(100);
-    filter: saturate(100);
+    -webkit-filter: hue-rotate(0deg) saturate(100); /* Chrome, Safari, Opera */
+    filter: hue-rotate(0deg) saturate(100);
 }
 
 .green { /* must start with saturated red image for color to be correct */
-    -webkit-filter: hue-rotate(115deg); /* Chrome, Safari, Opera */
-    filter: hue-rotate(115deg);
-    -webkit-filter: saturate(100);
-    filter: saturate(100);
+    -webkit-filter: saturate(100) hue-rotate(115deg); /* Chrome, Safari, Opera */
+    filter: saturate(100) hue-rotate(115deg);
+
 }
 
 .blue { /* must start with saturated red image for color to be correct */
-    -webkit-filter: hue-rotate(240deg); /* Chrome, Safari, Opera */
-    filter: hue-rotate(240deg);
-    -webkit-filter: saturate(100);
-    filter: saturate(100);
+    -webkit-filter: hue-rotate(240deg) saturate(100); /* Chrome, Safari, Opera */
+    filter: hue-rotate(240deg) saturate(100);
 }
 
 .purple { /* must start with saturated red image for color to be correct */
-    -webkit-filter: hue-rotate(270deg); /* Chrome, Safari, Opera */
-    filter: hue-rotate(270deg);
-    -webkit-filter: saturate(100);
-    filter: saturate(100);
+    -webkit-filter: hue-rotate(270deg) saturate(100); /* Chrome, Safari, Opera */
+    filter: hue-rotate(270deg) saturate(100);
 }
 
 .black { /* must start with saturated red image for color to be correct */
-    -webkit-filter: hue-rotate(270deg); /* Chrome, Safari, Opera */
-    filter: hue-rotate(270deg);
-    -webkit-filter: saturate(0);
-    filter: saturate(0);
+    -webkit-filter: hue-rotate(270deg) saturate(0); /* Chrome, Safari, Opera */
+    filter: hue-rotate(270deg) saturate(0);
 }
 
 .game-cell img {
   height: 80px;
   margin: 7px 9px;
-}
-
-footer {
-  width: 290px;
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 .turnPointer {
